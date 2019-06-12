@@ -47,34 +47,31 @@ def connect_db(query):
 def popular_articles():
     data = connect_db(query_one)
 
-    print
-    question_one
+    print question_one
     for i in range(len(data)):
-        print
-        "\n" + "\t" + "\"" + data[i][0] + "\" - " + \
-            str(data[i][1]) + " views" + "\n"
+        print "\n"
+        print "\"" + data[i][0] + "\" - " + str(data[i][1]) + " views"
+    print "\n"
 
 
 def popular_authors():
     data = connect_db(query_two)
 
-    print
-    question_two
+    print question_two
     for i in range(len(data)):
-        print
-        "\n" + "\t" + "\"" + data[i][0] + "\" - " + \
-            str(data[i][1]) + " views" + "\n"
+        print "\n"
+        print "\"" + data[i][0] + "\" - " + str(data[i][1]) + " views"
+    print "\n"
 
 
 def error_status():
     data = connect_db(query_three)
 
-    print
-    question_three
+    print question_three
     for i in range(len(data)):
-        print
-        "\n" + "\t" + str(data[i][0]) + " - " + \
-            str(data[i][1]) + " %" + " errors" + "\n"
+        print "\n"
+        print str(data[i][0]) + " - " + str(data[i][1]) + " %" + " errors"
+    print "\n"
 
 
 if __name__ == '__main__':
